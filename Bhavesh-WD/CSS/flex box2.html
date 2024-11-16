@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* flex, it is display property which is used to set items in one dimensional  */
+
+      /* flex-direction:row / row-reverse
+      
+       main-axis=horizontal
+       cross-axis=vertical */
+
+      /* flex-direction:column / column-reverse
+
+       main-axis=vertical
+       cross-axis=horizontal */
+
+      .parent {
+        /* width: 1000px; */
+        width: 60%;
+        height: 500px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+        border: 2px solid black;
+
+        display: flex;
+        /* display: inline-flex; */
+
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        /* justify-content, when we want to set items in main axis */
+
+        justify-content: start;
+        /* justify-content: center; */
+        /* justify-content: end; */
+
+        /* space-between, allocates extra spaces between  all items, first and last items will move to sides*/
+
+        /* justify-content: space-between; */
+
+        /* space-around, allocates extra spaces around all items in same proportion, first and last items will have different spaces on either sides*/
+        /* justify-content: space-around; */
+
+        /* space-evenly, allocates extra spaces evenly to items in same proportion, all items have same space around them*/
+        /* justify-content: space-evenly; */
+
+        /* align-items, when we want to set items in cross axis */
+
+        align-items: start;
+        align-items: center;
+        align-items: end;
+
+        align-items: baseline;
+        align-items: stretch;
+
+        /* flex-wrap, when size required by all items are greater than container size at that time flex squeeze them to fit in available  space, but if we don't want to then we wrap remaining items in new line  */
+
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-flow, it is shorthand for flex-direction and flex-wrap */
+        /* flex-flow: flex-direction flex-wrap; */
+        flex-flow: row wrap;
+
+        /* align-content, when we want to set whole content on crossAxis */
+
+        align-content: start;
+        align-content: end;
+        align-content: center;
+        align-content: space-around;
+        align-content: space-between;
+        align-content: stretch;
+        align-content: baseline;
+
+        /* gap, when we want to give static gap between items */
+
+        column-gap: 30px;
+        row-gap: 10px;
+        gap: 20px;
+        gap: 30px 10px;
+      }
+
+      .child {
+        /* height: 100px; */
+        width: 100px;
+        background-color: teal;
+        border-radius: 12px;
+
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+
+        border: 1px solid white;
+      }
+
+      /* .child:nth-child(1) {
+        font-size: 18px;
+      }
+      .child:nth-child(2) {
+        font-size: 32px;
+      }
+      .child:nth-child(3) {
+        font-size: 64px;
+      }
+      .child:nth-child(4) {
+        font-size: 14px;
+      }
+      .child:nth-child(5) {
+        font-size: 50px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+      <div class="child">10</div>
+      <div class="child">11</div>
+      <div class="child">12</div>
+      <div class="child">13</div>
+      <div class="child">14</div>
+      <div class="child">15</div>
+    </div>
+  </body>
+</html>
