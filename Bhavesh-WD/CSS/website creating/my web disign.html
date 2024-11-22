@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+         html,
+body,
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-font-color);
+}
+:root {
+  --bg-primary-color: #ffffff;
+  --bg-secondary-color: #f1f1f1;
+
+  --special-color: #f7c71b;
+
+  --section-padding: 0px 50px;
+  --section-gap: 50px;
+
+  --primary-font-color: #2d2d2d;
+}
+a{
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+ 
+body {
+  background-color: var(--bg-secondary-color);
+}
+.btn {
+  width: fit-content;
+  padding:  8px 24px;
+  border-radius: 6px;
+  background-color: var(--special-color);
+  color: white;
+  text-align: center;
+}
+.section-heading {
+  text-align: center;
+}
+.section-heading h5 {
+  color: var(--special-color);
+  font-weight: 500;
+} 
+.section-heading h2 {
+  margin-top: 5px;
+  font-weight: 500;
+}
+header {
+  padding-top: 40px;
+  display: flex;
+  padding: var(--section-pading);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-primary-color);
+}
+header nav a {
+  margin-left: 20px;
+  position: relative;
+   }
+   header nav a::before {
+  content: '';
+  height: 3px;
+  background-color: var(--special-color);
+  width: 0%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+
+  transition: all 300ms;
+}
+header nav a:hover::before {
+  width: 100%;
+}
+header .logo {
+  font-size: 48px;
+  font-family: 'Imperial Script', cursive;
+}
+#hero-section {
+  padding: var(--section-padding);
+  margin-top: var(--section-gap);
+  display: flex;
+}
+
+#hero-section > img {
+  height: 400px;
+}
+
+#hero-section .content {
+  max-width: 50%;
+}
+ 
+
+    </style>
+</head>
+<body>
+  <header> 
+       <div class="logo">bhavesh</div>
+    
+        <nav>
+         <a href="#">ABOUT ME</a>
+         <a href="#">SERVICES</a>
+         <a href="#">PORTFOLIO</a>
+         <a href="#">TESTIMONIALS</a>
+         <a href="#">CONTACT ME</a>
+        </nav>
+        <div class="btn">here me</div>
+        </header>
+        <main>
+        <section id="vs-code">
+          <div class="content">
+          <h5>Hello, i am</h5>
+          <h2>bhavesh Baroliya</h2>
+          <h4>website designer</h4>
+          <p>
+            I'm top line website developer with 5+ years of experience. I have
+            deep knowledge about technologies like Frontend, Backend and
+            Blockchain. I'm web developer during day time and Writer at night.
+          </p>
+          <button id="btn">Hire me</button>
+          <span> Download CV</span>
+        </div>
+
+
+        </section>
+        <section id="about-me-section"></section>
+        <section id="service-section"></section>
+        <section id="case-study-section"></section>
+        <section id="portfolio-section"></section>
+        <section id="testimonials-section"></section>
+        <section id="clients-section"></section>
+        <section id="contact-us-section"></section>
+      </main>
+</body>
+</html>

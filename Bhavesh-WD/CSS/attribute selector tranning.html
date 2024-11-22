@@ -67,6 +67,13 @@
 
         
       }
+      .child[data-custom-attr^='student'] {
+        background-color:  green;
+      }
+
+      .child[data-custom-attr$='bhavesh'] {
+        background-color:  blue;
+      }
     </style>
   </head>
   <body>
@@ -81,6 +88,8 @@
       <div class="child" data-custom-attr="Baroliyabhavesh">Baroliya bhavesh</div>
       <div class="child" data-custom-attr="bhavesh">bhavesh</div>
       <div class="child" data-custom-attr="jaimin">jaimin</div>
+      <div class="child" data-custom-attr="student bhavesh ">student bhavesh </div>
+
     </div>
   </body>
 </html>
